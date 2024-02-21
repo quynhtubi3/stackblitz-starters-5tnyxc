@@ -1,4 +1,7 @@
 function UserInfo({ data }) {
+  if (!data) {
+    return <div>Data is undefined</div>;
+  }
   const { firstName, image, lastName, age, email, address, bank, company } =
     data;
   return (
